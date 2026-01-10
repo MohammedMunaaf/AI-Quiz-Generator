@@ -153,11 +153,7 @@ def get_single_quiz(quiz_id: int, db: Session = Depends(get_db)):
         related_topics=quiz_data_from_db.related_topics,
         date_generated=db_quiz.date_generated
     )
-
-# Health check endpoint
-@app.get("/")
-async def root():
-    return {"message": "AI Wiki Quiz Generator API is running!"}
+    
 
 @app.get("/debug-llm-models")
 async def debug_llm_models():
@@ -188,6 +184,12 @@ async def debug_llm_models():
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error listing models: {str(e)}")
+
+
+# Health check endpoint
+@app.get("/")
+async def root():
+    return {"message": "AI Wiki Quiz Generator API is running!"}
 
 
 if __name__ == "__main__":
