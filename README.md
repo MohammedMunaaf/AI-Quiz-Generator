@@ -89,3 +89,4 @@ G --> H[Display Quiz + History]
 
 - Thank you for checking out Quizipedia — where Wikipedia meets AI to make learning fun and interactive.
 - ⭐ Contributions, feedback, and ideas are always welcome!
+
