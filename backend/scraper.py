@@ -128,6 +128,7 @@ def scrape_wikipedia(url: str) -> Dict:
     except Exception as e:
         raise RuntimeError(f"An unexpected error occurred during scraping: {e}")
 
+
 # Example usage (for testing)
 if __name__ == "__main__":
     test_url = "https://en.wikipedia.org/wiki/Alan_Turing"
