@@ -26,3 +26,4 @@ function Modal({ isOpen, onClose, title, children }) {
 }
 
 export default Modal;
+
