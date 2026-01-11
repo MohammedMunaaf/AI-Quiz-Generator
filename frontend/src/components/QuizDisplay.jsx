@@ -152,3 +152,4 @@ function QuizDisplay({ quizData }) {
 }
 
 export default QuizDisplay;
+
