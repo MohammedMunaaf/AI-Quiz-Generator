@@ -10,7 +10,6 @@ class QuizQuestion(BaseModel):
     difficulty: str = Field(..., description="Difficulty level: 'easy', 'medium', or 'hard'.")
     explanation: str = Field(..., description="A short explanation for the answer.")
 
-
 # Pydantic schema for the LLM's full output
 class LLMFullQuizOutput(BaseModel):
     title: str = Field(..., description="The title of the Wikipedia article.")
